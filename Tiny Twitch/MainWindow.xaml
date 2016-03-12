@@ -1,0 +1,12 @@
+﻿<Window xmlns:awe="http://schemas.awesomium.com/winfx"  x:Class="Tiny_Twitch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tiny_Twitch"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStyle="None" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" StateChanged="Window_StateChanged" Background="Black">
+    <Grid>
+        <awe:WebControl Name="webBrowser" Padding="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="-8,0" Background="Black" />
+    </Grid>
+</Window>

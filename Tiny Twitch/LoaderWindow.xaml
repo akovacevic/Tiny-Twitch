@@ -1,0 +1,19 @@
+﻿<Window x:Class="Tiny_Twitch.LoaderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tiny_Twitch"
+        mc:Ignorable="d"
+        Title="LoaderWindow" Height="50" Width="300" KeyDown="Window_KeyDown" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <materialDesign:ColorZone Mode="PrimaryDark">
+            <DockPanel>
+                <TextBlock Margin="4" x:Name="txtChannelName" VerticalAlignment="Center" Text="Channel Name: " FontWeight="Bold"/>
+                <Button x:Name="btnWatch" Content="WATCH" Padding="4,0,4,0" DockPanel.Dock="Right" Margin="2" Click="btnWatch_Click" VerticalAlignment="Center"/>
+                <TextBox x:Name="tbChannelName" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="2"></TextBox>
+            </DockPanel>
+        </materialDesign:ColorZone>
+    </Grid>
+</Window>
